@@ -2,7 +2,8 @@
 
 #include "fdcl/save.hpp"
 
-int main()
+
+int main(void)
 {
     fdcl::save log;
 	int i = 0;

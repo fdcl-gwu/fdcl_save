@@ -1,0 +1,3 @@
+[submodule "build/eigen"]
+	path = libraries/eigen
+	url = git@github.com:fdcl-gwu/eigen.git

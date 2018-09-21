@@ -14,32 +14,36 @@ int main(void)
     // initialize the class first
     fdcl::save log;
 
-    // define few variables that needs to be written
-	int i = 0;
-	double d = M_PI;
 
-	Eigen::Matrix<double, 3, 1> J;
-	J.setIdentity();
+    // define few variables that needs to be written
+    int i = 0;
+    double d = M_PI;
+
+    Eigen::Matrix<double, 3, 1> J;
+    J.setIdentity();
+
 
     // open the file	
-	log.open("test_fdcl_save.txt");
-	
+    log.open("test_fdcl_save.txt");
+
+
     // write data
-	log.write(d);
-	log.write(i);
+    log.write(d);
+    log.write(i);
 
     // write a new line character
-	log.endl();
+    log.endl();
 
     // write more data
-	log.write(d);
-	log.write(J);
+    log.write(d);
+    log.write(J);
 
-    // write anothe new line character to the file
-	log.endl();
-		
+    // write another new line character to the file
+    log.endl();
+	
+	
     // save data to the hard drive
     // skipping this step may not write any data
-	log.close();
+    log.close();
 }
 ```

@@ -6,14 +6,11 @@
 2. [Using the Class](#using-the-class)
 3. [For Developers](#for-developers)
 
-
 <a name="intro"></a>
 ## Basic Introduction
 
 This class is used for easily saving data into a file on a hard disk with C++. 
-Currently, the class supports saving `int`, `float`, `double`, `std::string` and eigen vectors/matrices of size 3x1, 4x1, and 3x3.
-
-Below is an example on how to use this class. For more details check the [documentation](html/index.html).
+Below is an example on how to use this class.
 
 ```
 #include "fdcl/save.hpp"

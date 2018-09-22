@@ -1,11 +1,13 @@
 # FDCL Save Class
 
+<a name="contents"></a>
 ## Contents
-1. [Basic Introduction](#basic-introduction)
-1. [Using the Class](#using-the-class)
-1. [For Developers](#for-developers)
+1. [Basic Introduction](#intro)
+2. [Using the Class](#using-the-class)
+3. [For Developers](#for-developers)
 
 
+<a name="intro"></a>
 ## Basic Introduction
 
 This class is used for easily saving data into a file on a hard disk with C++. 
@@ -55,8 +57,9 @@ int main(void)
     log.close();
 }
 ```
+[back to contents](#contents)
 
-
+<a name="using-the-class"></a>
 ## Using the Class
 
 To add this to class to your code, using CMake and cloning it as a git submodule is recommended. 
@@ -90,22 +93,29 @@ target_link_libraries(name/of/the/library/or/exec
 
 Then, you can simply call `#include "fdcl/save.hpp"` in your source/header files in the main directory.
 
+[back to contents](#contents)
 
+<a name="for-developers"></a>
 ## For Developers
 
 ### Contributing
-1. Anyone is welcome to contribute, but make sure you follow the existing coding style.
-1. Make sure to document all your changes/additions with Doxygen type comments.
+* Anyone is welcome to contribute, but make sure you follow the existing coding style.
+* Make sure to document all your changes/additions with Doxygen type comments.
 
 ### Generating the Documentation
-1. Document generation is done with Doxygen
-1. If you do not have Doxygen, install it first
-    ```
-    sudo apt-get install -y doxygen graphviz
-    ```
-1. Use Doxygen to generate the documentation
-    ```
-    cd docs/Doxygen
-    doxygen Doxygen
-    ```
-1. This will generate the documentation. Commit and push to update the online documentation.
+Document generation is done with Doxygen
+If you do not have Doxygen, install it first
+```
+sudo apt-get install -y doxygen graphviz
+```
+
+Use Doxygen to generate the documentation
+```
+cd docs/Doxygen
+doxygen Doxygen
+```
+
+This will generate the documentation. 
+Commit and push to update the online documentation.
+
+[back to contents](#contents)

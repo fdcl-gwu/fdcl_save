@@ -86,7 +86,26 @@ Also, whenever you make a file that uses fdcl_save class, add `fdcl_save` to the
 target_link_libraries(name/of/the/library/or/exec
     PRIVATE fdcl_save
 )
-
 ```
 
-Then, you can simply call `#include "fdcl/save.hpp"` in and of your files in the main directory.
+Then, you can simply call `#include "fdcl/save.hpp"` in your source/header files in the main directory.
+
+
+## For Developers
+
+### Contributing
+1. Anyone is welcome to contribute, but make sure you follow the existing coding style.
+1. Make sure to document all your changes/additions with Doxygen type comments.
+
+### Generating the Documentation
+1. Document generation is done with Doxygen
+1. If you do not have Doxygen, install it first
+    ```
+    sudo apt-get install -y doxygen graphviz
+    ```
+1. Use Doxygen to generate the documentation
+    ```
+    cd docs/Doxygen
+    doxygen Doxygen
+    ```
+1. This will generate the documentation. Commit and push to update the online documentation.

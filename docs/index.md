@@ -13,7 +13,7 @@
 This class is used for easily saving data into a file on a hard disk with C++. 
 Currently, the class supports saving `int`, `float`, `double`, `std::string` and eigen vectors/matrices of size 3x1, 4x1, and 3x3.
 
-Below is an example on how to use this class.
+Below is an example on how to use this class. For more details check the [documentation](html/index.html).
 
 ```
 #include "fdcl/save.hpp"

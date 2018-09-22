@@ -3,47 +3,25 @@
 This class is used for easily saving data into a file on a hard disk. 
 Currently, the class supports saving `int`, `float`, `double`, `std::string` and eigen vectors/matrices of size 3x1, 4x1, and 3x3.
 
-Below is an example on how to use this class. Check [full documentation](https://fdcl-gwu.github.io/fdcl_save) for more details.
+Check [full documentation](https://fdcl-gwu.github.io/fdcl_save) for more details.
 
+
+## Contributing
+* Anyone is welcome to contribute, but make sure you follow the existing coding style.
+* Make sure to document all your changes/additions with Doxygen style comments.
+
+### Generating the Documentation
+Document generation is done with Doxygen
+If you do not have Doxygen, install it first
 ```
-#include "fdcl/save.hpp"
-
-
-int main(void)
-{
-    // initialize the class first
-    fdcl::save log;
-
-
-    // define few variables that needs to be written
-    int i = 0;
-    double d = M_PI;
-
-    Eigen::Matrix<double, 3, 1> J;
-    J.setIdentity();
-
-
-    // open the file	
-    log.open("test_fdcl_save.txt");
-
-
-    // write data
-    log.write(d);
-    log.write(i);
-
-    // write a new line character
-    log.endl();
-
-    // write more data
-    log.write(d);
-    log.write(J);
-
-    // write another new line character to the file
-    log.endl();
-	
-	
-    // save data to the hard drive
-    // skipping this step may not write any data
-    log.close();
-}
+sudo apt-get install -y doxygen graphviz
 ```
+
+Use Doxygen to generate the documentation
+```
+cd docs/Doxygen
+doxygen Doxygen
+```
+
+This will generate the documentation. 
+Commit and push to update the online documentation.

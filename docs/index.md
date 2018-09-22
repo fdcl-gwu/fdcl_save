@@ -4,7 +4,6 @@
 ## Contents
 1. [Basic Introduction](#intro)
 2. [Using the Class](#using-the-class)
-3. [For Developers](#for-developers)
 
 <a name="intro"></a>
 ## Basic Introduction
@@ -89,30 +88,5 @@ target_link_libraries(name/of/the/library/or/exec
 ```
 
 Then, you can simply call `#include "fdcl/save.hpp"` in your source/header files in the main directory.
-
-[back to contents](#contents)
-
-<a name="for-developers"></a>
-## For Developers
-
-### Contributing
-* Anyone is welcome to contribute, but make sure you follow the existing coding style.
-* Make sure to document all your changes/additions with Doxygen type comments.
-
-### Generating the Documentation
-Document generation is done with Doxygen
-If you do not have Doxygen, install it first
-```
-sudo apt-get install -y doxygen graphviz
-```
-
-Use Doxygen to generate the documentation
-```
-cd docs/Doxygen
-doxygen Doxygen
-```
-
-This will generate the documentation. 
-Commit and push to update the online documentation.
 
 [back to contents](#contents)

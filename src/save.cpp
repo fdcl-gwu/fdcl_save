@@ -6,14 +6,14 @@ fdcl::save::save()
     // Make sure the bool buf_line_full is false at the beginning.
     // If the size of the data sent to write is greater then the MAX_BUF_SIZE
     // defined in the header file, the code is going to complain.
-    // If that happens, just increase the data buffer size by changing the 
+    // If that happens, just increase the data buffer size by changing the
     // MAX_BUF_SIZE.
     buf_line_full = false;
 
     // This sets the initial location of the data in the data buffer
     buf_line_loc = 0;
 
-    // If a name is not defined, the data will be saved to a file named 
+    // If a name is not defined, the data will be saved to a file named
     // 'log.txt'.
     file_name = "log.txt";
 }
@@ -136,9 +136,13 @@ void fdcl::save::is_buf_line_full()
     }
 }
 
-template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double,3,1>> 
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 3, 1>>
         & M);
-template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double,3,3>> 
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 3, 3>>
         & M);
-template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double,4,1>> 
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 4, 1>>
         & M);
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 4, 3>>
+        & M);
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 7, 3>>
+            & M);

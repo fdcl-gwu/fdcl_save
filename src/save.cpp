@@ -148,3 +148,5 @@ template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 6, 1>>
         & M);
 template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 7, 3>>
             & M);
+template void fdcl::save::write(Eigen::MatrixBase<Eigen::Matrix<double, 8, 1>>
+            & M);

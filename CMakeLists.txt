@@ -17,7 +17,7 @@ add_library(fdcl_save STATIC ${fdcl_save_src})
 
 add_executable(test_fdcl_save src/test_fdcl_save.cpp)
 target_compile_options(test_fdcl_save
-    PRIVATE -Wall -o -O3 -std=c++11
+    PRIVATE -Wall -O3 -std=c++11
 )
 target_link_libraries(test_fdcl_save
     fdcl_save
